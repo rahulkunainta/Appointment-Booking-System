@@ -10,7 +10,7 @@ public class DBConnection {
 		try{
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection(
-    "jdbc:mysql://roundhouse.proxy.rlwy.net:53520/railway",
+    "jdbc:mysql://roundhouse.proxy.rlwy.net:53520/doctor_db",
     System.getenv("root"),
     System.getenv("OAVwGuYkahxNJFIYrlBxTKYEHSsKUbOD")
 );
