@@ -9,7 +9,7 @@ public class DBConnection {
 		
 		try{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/doctor_db","mysql.railway.internal","OAVwGuYkahxNJFIYrlBxTKYEHSsKUbOD");
+			con = DriverManager.getConnection("mysql://root:OAVwGuYkahxNJFIYrlBxTKYEHSsKUbOD@mysql.railway.internal:3306/railway","mysql.railway.internal","OAVwGuYkahxNJFIYrlBxTKYEHSsKUbOD");
 		} catch (Exception e) {
 			
 			e.printStackTrace();
