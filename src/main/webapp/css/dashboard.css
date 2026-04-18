@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+}
+.dashboard-container {
+    width: 100%;
+    max-width: 2200px;
+    margin: 0 auto;
+     
+}
+
+.navbar {
+    background: linear-gradient(90deg, #6c5ce7, #7f5af0);
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+ 
+
+ 
+
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to right, #eef2ff, #f8fafc);
+    border-radius: 15px;
+    height:80vh;
+}
+
+/* Left Text */
+.hero-text {
+    max-width: 40%;
+}
+
+.hero-text h3{
+	
+	font-size:30px;
+	
+	
+}
+.hero-text p{
+	font-size:20px;
+	font-weight: bold;
+	padding-left:35px;
+	padding-bottom:15px;
+	
+	
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.highlight {
+    color: #2563eb;
+}
+
+.highlight2 {
+    color: #8b5cf6;
+}
+
+.features {
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+/* Buttons */
+.hero-buttons {
+    margin-top: 40px;
+    
+}
+
+.primary-btn {
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.secondary-btn {
+    border: 1px solid #2563eb;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #2563eb;
+}
+
+.speciality-section {
+    padding: 40px;
+    background: #f8fafc;
+     
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-all-btn {
+    background: #1d4ed8;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.speciality-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.speciality-card {
+    text-align: center;
+}
+
+.speciality-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.speciality-card a {
+    display: block;
+    color: #06b6d4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+ 
+ 
+
+.book-btn1 {
+    display: inline-block;
+    margin-top: 10px;
+    background: #22c55e;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.appointment-container {
+    display: flex;
+    gap:10px;
+    margin: 40px 20px;     /* ✅ centers horizontally */
+     
+}
+
+.left-appointment,
+.right-appointment,.left1-appointment,
+.right2-appointment {
+    flex: 1;
+    width:250px;
+    height:400px;
+    box-shadow:5px 5px 10px black;
+    border-radius: 10px;
+}
+
+ 
+.right-appointment:hover{
+	transform: scale(1.05);  
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    cursor: grab;
+	
+}
+.right2-appointment:hover{
+	transform: scale(1.05);  
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    cursor: grab;
+	
+}
+.left1-appointment:hover{
+	transform: scale(1.05);  
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    cursor: grab;
+	
+}
+.left-appointment:hover{
+	transform: scale(1.05);  
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    cursor: grab;
+	
+}
+  
+
+.appointment-card{
+	 
+	background-image:url("../Pictures/back2.jpg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:398px;
+	border-radius:10px;
+	display:flex;
+	flex-direction:column;
+	padding-top:10px;
+}
+.appointment-card h3{
+	font-size:30px;
+	padding-left:10px;
+}
+.appointment-card p{
+	font-size:20px;
+	padding-top:10px;
+	padding-left:10px;
+	font-weight:bold;
+}
+.status-green {
+    color: green;
+    font-weight: bold;
+}
+
+.status-red {
+    color: red;
+    font-weight: bold;
+}
+.my-appo-card{
+	height:398px;
+	border-radius:10px;
+}
+
+.profile-card{
+	height:398px;
+	border-radius:10px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+.profile-card img{
+	height:200px;
+	width:200px;
+	border-radius:100px;
+	
+}
+.profile-card h3 {
+	font-size:20px;
+	padding-bottom:15px;
+	 
+}
+.profile-card  p{
+	
+	font-size:20px;
+	 
+}
+.my-appo-card{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	padding:0px 0px 20px 10px;
+}
+.my-appo-card p{
+	 
+	padding-bottom:10px;
+	font-size:20px;
+	font-weight:bold;
+}
+.my-appo-card h3{
+	 
+	padding-bottom:10px;
+	font-size:28px;
+	font-weight:bold;
+}
+
+.stats-card{
+	height:398px;
+	border-radius:10px;
+	
+}
+
+.stats-card p{
+	 color:black;
+	 font-size:18px;
+	 line-height:1.5;
+}
+.stats-card h3,h4{
+	 color:black;
+	 font-size:20px;
+	 padding-bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+button {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #6c5ce7;
+    color: white;
+    cursor: pointer;
+}
+.book-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #6c5ce7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    width:205px;
+}
+
+.gallery-grid {
+    column-count: 4;   /* number of columns */
+    column-gap: 15px;
+    padding: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;   /* IMPORTANT: keep original size */
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: block;
+    break-inside: avoid; /* prevents breaking */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.gallery-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.footer {
+    background: linear-gradient(90deg, #6c5ce7, #7f5af0);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer .author {
+    font-weight: bold;
+    color: #ffeaa7;
+}
+.footer .author:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+}
