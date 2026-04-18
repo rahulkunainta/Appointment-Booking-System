@@ -9,7 +9,11 @@ public class DBConnection {
 		
 		try{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("mysql://root:OAVwGuYkahxNJFIYrlBxTKYEHSsKUbOD@mysql.railway.internal:3306/railway","mysql.railway.internal","OAVwGuYkahxNJFIYrlBxTKYEHSsKUbOD");
+			con = DriverManager.getConnection(
+    "jdbc:mysql://"+System.getenv("mysql.railway.internal")+":"+System.getenv("3306")+"/"+System.getenv("railway"),
+    System.getenv("root"),
+    System.getenv("OAVwGuYkahxNJFIYrlBxTKYEHSsKUbOD")
+);
 		} catch (Exception e) {
 			
 			e.printStackTrace();
