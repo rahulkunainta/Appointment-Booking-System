@@ -14,6 +14,10 @@ public class PatientDao {
 		
 		try {
 			Connection con = DBConnection.getConnection();
+
+			if (con == null) {
+                throw new RuntimeException("Connection is NULL");
+               }
 			
 			String q = "INSERT INTO patients(name,email,password) VALUES(?,?,?)";
 			
