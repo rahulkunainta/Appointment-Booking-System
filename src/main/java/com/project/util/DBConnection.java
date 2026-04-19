@@ -19,11 +19,11 @@ public class DBConnection {
 
             // fallback for LOCAL testing only
             if (host == null || host.isEmpty()) {
-                host = "localhost";
+                host = "mysql.railway.internal";
                 port = "3306";
-                db   = "doctor_db";
+                db   = "railway";
                 user = "root";
-                pass = "";
+                pass = "iFSnpKgquoInHmazfylAwwUxqEWJptoI";
             }
 
             String url = "jdbc:mysql://" + host + ":" + port + "/" + db +
