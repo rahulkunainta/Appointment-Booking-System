@@ -1,6 +1,7 @@
 package com.project.util;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 public class DBConnection {
 
@@ -10,18 +11,30 @@ public class DBConnection {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            String url = "jdbc:mysql://" 
-                       + System.getenv("MYSQLHOST") + ":" 
-                       + System.getenv("MYSQLPORT") + "/" 
-                       + System.getenv("MYSQLDATABASE")
-                       + "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
-
+            String host = System.getenv("MYSQLHOST");
+            String port = System.getenv("MYSQLPORT");
+            String db   = System.getenv("MYSQLDATABASE");
             String user = System.getenv("MYSQLUSER");
             String pass = System.getenv("MYSQLPASSWORD");
 
+            // fallback for LOCAL testing only
+            if (host == null || host.isEmpty()) {
+                host = "localhost";
+                port = "3306";
+                db   = "doctor_db";
+                user = "root";
+                pass = "";
+            }
+
+            String url = "jdbc:mysql://" + host + ":" + port + "/" + db +
+                    "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+
             con = DriverManager.getConnection(url, user, pass);
 
+            System.out.println("✅ Database Connected");
+
         } catch (Exception e) {
+            System.out.println("❌ DB Connection Failed");
             e.printStackTrace();
         }
 
