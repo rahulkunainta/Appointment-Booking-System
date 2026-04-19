@@ -17,10 +17,10 @@ public class DBConnection {
             String user = System.getenv("MYSQLUSER");
             String pass = System.getenv("MYSQLPASSWORD");
 
-            // fallback for LOCAL testing only
+            // fallback ONLY for local testing
             if (host == null || host.isEmpty()) {
-                host = "mysql.railway.internal";
-                port = "3306";
+                host = "nozomi.proxy.rlwy.net";
+                port = "51710";
                 db   = "railway";
                 user = "root";
                 pass = "iFSnpKgquoInHmazfylAwwUxqEWJptoI";
